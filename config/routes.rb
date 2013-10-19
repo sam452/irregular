@@ -1,8 +1,18 @@
 Irregular::Application.routes.draw do
-  authenticated :user do
-    root :to => 'home#index'
+  
+  namespace :api, defaults: {format: 'json'} do
+    namespace :v1 do
+      resources :tasks
+    end
   end
-  root :to => "home#index"
+  resources :tasks
+
+  root :to => "tasks#index"
   devise_for :users
   resources :users
+authenticated :user do
+    root :to => 'home#index'
+  end
+
+  
 end

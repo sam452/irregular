@@ -1,0 +1,10 @@
+<h1>New task</h1>
+<%= simple_form_for @task do |f| %>
+  <%= f.input :name %>
+  <%= f.input :location_name %>
+  <%= f.input :category %>
+  <%= f.input :description %>
+  <%= f.input :offer %>
+  <%= f.input :expiration %>
+  <%= f.button :submit %>
+<% end %>

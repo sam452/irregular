@@ -233,6 +233,7 @@ DEPENDENCIES
   guard-rspec
   hub
   jquery-rails
+  launchy
   less-rails
   pg
   quiet_assets
