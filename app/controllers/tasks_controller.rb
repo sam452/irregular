@@ -1,4 +1,5 @@
 class TasksController < ApplicationController
+before_filter :authenticate_user!, only: [:new, :create]
 
 	def index
 		@tasks = Task.all
