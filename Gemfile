@@ -15,7 +15,7 @@ gem 'rolify'
 gem 'simple_form'
 gem 'thin'
 gem 'geocoder'
-gem 'twitter-bootstrap-rails'
+gem 'twitter-bootstrap-rails', '= 2.2.6'
 group :assets do
   gem 'less-rails'
   gem 'therubyracer', :platform=>:ruby
