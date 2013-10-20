@@ -5,6 +5,8 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
+  gem 'less-rails'
+  gem 'therubyracer', :platform=>:ruby
 end
 gem 'jquery-rails'
 gem 'cancan'
@@ -16,10 +18,6 @@ gem 'simple_form'
 gem 'thin'
 gem 'geocoder'
 gem 'twitter-bootstrap-rails', '= 2.2.6'
-group :assets do
-  gem 'less-rails'
-  gem 'therubyracer', :platform=>:ruby
-end
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
