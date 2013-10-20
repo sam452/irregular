@@ -14,6 +14,7 @@ gem 'pg'
 gem 'rolify'
 gem 'simple_form'
 gem 'thin'
+gem 'geocoder'
 group :assets do
   gem 'less-rails'
   gem 'therubyracer', :platform=>:ruby
