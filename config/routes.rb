@@ -3,6 +3,7 @@ Irregular::Application.routes.draw do
   namespace :api, defaults: {format: 'json'} do
     namespace :v1 do
       resources :tasks
+      resources :tokens,:only => [:create, :destroy]
     end
   end
   resources :tasks

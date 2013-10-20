@@ -3,17 +3,12 @@ my tasks
 <h1>Tasks</h1>
 <% if @tasks %>
 	<div id="tasklist">
-	    <ul>
-	      <li>Name</li>
-	      <li>Offer</li>
-	      <li>location_name</li>
-	    </ul>
 	    <% @tasks.each do |t| %>
 	    <ul>
-	      <li><%= t.name %></li>
-	      <li><%= t.offer %></li>
-	      <li><%= t.location_name %></li>           
-	    </ul>                   
-	    <% end %>
+	      <li>Name: <%= t.name %></li>
+	      <li>Offer: <%= t.offer %></li>
+	      <li>Location_name: <%= t.location_name %></li>
+	    </ul>
+	    <% end %>               
 	  </div>
 <% end %>
