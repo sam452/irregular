@@ -15,10 +15,10 @@ gem 'rolify'
 gem 'simple_form'
 gem 'thin'
 gem 'geocoder'
+gem 'twitter-bootstrap-rails'
 group :assets do
   gem 'less-rails'
   gem 'therubyracer', :platform=>:ruby
-  gem 'twitter-bootstrap-rails'
 end
 group :development do
   gem 'better_errors'
